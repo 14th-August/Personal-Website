@@ -1,0 +1,63 @@
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 200;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 0;
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transition: all 0.75s;
+}
+
+.splash h2 {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 100;
+  transform: translateX(-50%); /* pushes it back toward the center */
+}
+
+.splash h1 {
+    font-family: 'Cormorant';
+    writing-mode: horizontal-tb;
+    font-weight: 100;
+    margin-right: 20px;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.fade-in-under {
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  animation-delay: 0.75s; 
+}

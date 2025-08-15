@@ -1,0 +1,22 @@
+#time {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+#toggle-btn {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.time-display {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #444;
+  font-weight: 500;
+}
+
